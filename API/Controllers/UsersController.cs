@@ -7,7 +7,7 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]     //aceder -> localhost/apt/users(nomedaclass)
-    public class UsersController
+    public class UsersController : ControllerBase
     {
         private readonly DataContext _context;
 
