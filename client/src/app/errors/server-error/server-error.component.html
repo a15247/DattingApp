@@ -1,0 +1,15 @@
+<h4>Internet server error - Refreshing the page</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: If you are seeing this then angular is probably not to blame</p>
+    <p>What to do next ?</p>
+    <ol>
+        <li>Opcao 1</li>
+        <li>Opcao 2</li>
+        <li>Opcao 3</li>
+    </ol>
+    <p style="font-weight: bold;">Following is the stack trace</p>
+    <code class="mt-5" style="background-color: rgb(255, 255, 255);  color: red;">
+        {{error.details}}
+    </code>
+</ng-container>
